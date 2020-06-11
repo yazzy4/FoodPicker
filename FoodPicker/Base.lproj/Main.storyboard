@@ -30,6 +30,9 @@
                                 <state key="normal" title="Choose A Food">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didSelectChooseFoodButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRI-6a-B8x"/>
+                                </connections>
                             </button>
                             <visualEffectView opaque="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="4vm-em-2jL">
                                 <rect key="frame" x="20" y="32" width="335" height="61"/>
@@ -62,7 +65,7 @@
                                 </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soul Food " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehp-rf-UFr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehp-rf-UFr">
                                 <rect key="frame" x="20" y="106" width="339" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="cN2-5v-zW4"/>
@@ -95,6 +98,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="tzB-CX-fE1" id="df9-cm-ZDx"/>
+                        <outlet property="foodTypeLabel" destination="ehp-rf-UFr" id="BjK-8x-lzF"/>
+                        <outlet property="todaysChoiceLabel" destination="8gS-Aq-wI6" id="Bz1-ls-7Un"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
